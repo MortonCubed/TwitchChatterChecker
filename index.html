@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Robux generator </title>
+    <title>Twitch Chatter Hotkey</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="render.js"></script>
 </head>
 <body>
-    
-    <h1>HUGE ROBUX GENERATOR </h1>
-    <input type="text" class="keyWord" placeholder="Enter Keyword...">
-    <button>GENERATEZ</button>
-    <h1 id="password"></h1>
-  
-  <div id="result"></div>
+    <div class="container">
+        <h1>Twitch Chatter Checker</h1>
+        <p class="subtitle">Press a global hotkey to check if a user is in chat</p>
 
+        <div class="input-group">
+            <label for="hotkey">Global Hotkey (e.g. "F8", "Ctrl+Shift+C", "8")</label>
+            <input type="text" id="hotkeyInput" class="keyWord" placeholder="Enter hotkey (e.g. F8 or 8)" maxlength="20">
+        </div>
+
+        <button id="registerBtn">Register Hotkey</button>
+
+        <div id="status" class="status"></div>
+        <div id="result"></div>
+          <div class="input-group">
+            <label for="ul">Insert the username into list</label>
+            <input type="text" id="UserList" class="keyWord" placeholder="Enter username (e.g. mortonz3)" maxlength="20">
+        </div>
+
+        <button id="InsertUser">Insert User</button>
+<div id="status2" class="status"></div>
+        <div id="result2"></div>
+      <button id="openButton">Remove User</button>
+    </div>
+
+    <audio id="notificationSound" src="audio.mp3"></audio>
 </body>
 </html>

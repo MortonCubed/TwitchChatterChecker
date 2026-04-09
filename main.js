@@ -1,12 +1,15 @@
-const { app,BrowserWindow,globalShortcut,ipcMain } = require("electron");
+const { app, BrowserWindow, globalShortcut, ipcMain } = require("electron");
+const { Menu } = require('electron');
+Menu.setApplicationMenu(null);
+
 let mainWindow;
-let win = null;
+let currentHotkey = null;   // Track currently registered hotkey
 
 const createWindow = () => {
     mainWindow = new BrowserWindow({
         width: 900,
-        height: 700,
-        resizable: true,
+        height: 900,
+        resizable: false,
         webPreferences: {
             contextIsolation: false,
             nodeIntegration: true,
@@ -14,26 +17,34 @@ const createWindow = () => {
     });
     mainWindow.loadFile('index.html');
 };
+
 app.whenReady().then(() => {
     createWindow();
 
-    const hotkey = '8';   // ←←← Change this to your preferred hotkey
+    ipcMain.on('register-hotkey', (event, newHotkey) => {
+        // Unregister previous hotkey if any
+        if (currentHotkey) {
+            globalShortcut.unregister(currentHotkey);
+            console.log(`Unregistered old hotkey: ${currentHotkey}`);
+        }
 
-    const isRegistered = globalShortcut.register(hotkey, () => {
-        console.log(`🔥 Global hotkey "${hotkey}" pressed!`);
+        currentHotkey = newHotkey;
 
-        if (mainWindow && !mainWindow.isDestroyed()) {
-            mainWindow.webContents.send('global-hotkey-pressed', hotkey);
-            console.log('✅ Message sent to renderer');
+        const isRegistered = globalShortcut.register(newHotkey, () => {
+            if (mainWindow && !mainWindow.isDestroyed()) {
+                mainWindow.webContents.send('global-hotkey-pressed', newHotkey);
+            }
+        });
+
+        if (isRegistered) {
+            console.log(`✅ Hotkey "${newHotkey}" registered successfully`);
         } else {
-            console.log('⚠️ Main window not ready yet');
+            console.log(`❌ Failed to register hotkey "${newHotkey}"`);
         }
     });
-
-    if (isRegistered) {
-        console.log(`✅ Hotkey "${hotkey}" registered successfully`);
-    } else {
-        console.log(`❌ Failed to register hotkey "${hotkey}"`);
-    }
 });
 
+// Clean up when app closes
+app.on('will-quit', () => {
+    globalShortcut.unregisterAll();
+});
