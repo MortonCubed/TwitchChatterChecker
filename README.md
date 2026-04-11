@@ -25,4 +25,6 @@ https://www.youtube.com/watch?v=q0EFY09cVyg&lc=UgxVsthDCn9iKDXIYc54AaABAg
 ### step 8 : setup a hotkey 
 <img width="886" height="849" alt="{F0AD6BB9-2A71-42BD-B1E2-C914B8872621}" src="https://github.com/user-attachments/assets/fd203623-4c51-489f-a2e2-6a9181e88446" />
 
-### step 9 : press it whenever! you want to check for that person,although,that button won't be functional any other application while the exe is open!(e.g. typing k while having k set as hotkey and exe opened will cause you to be unable to type k in other application
+### step 9 : press it whenever you want to check for that person,although,that button won't be functional any other application while the exe is open!(e.g. typing k while having k set as hotkey and exe opened will cause you to be unable to type k in other application
+<img width="869" height="887" alt="{B614483E-3AE4-4222-ADB2-CB575F8BC9CE}" src="https://github.com/user-attachments/assets/6859e3fb-6ef6-4c00-b3d9-54c15c4478ae" />
+
