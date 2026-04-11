@@ -10,6 +10,7 @@ const createWindow = () => {
         width: 900,
         height: 900,
         resizable: false,
+        icon: __dirname + '/mort.ico',
         webPreferences: {
             contextIsolation: false,
             nodeIntegration: true,
