@@ -1,7 +1,7 @@
 # how to use:
+(long form youtube tutorial : https://www.youtube.com/watch?v=q0EFY09cVyg&lc=UgxVsthDCn9iKDXIYc54AaABAg)
 ### step 1 : Extract the installed file
 <img width="1633" height="707" alt="{86BFC1BF-134D-455A-A7EA-19AA5E6C91E8}" src="https://github.com/user-attachments/assets/ee99f5bc-9145-42aa-a4bf-a0c2c7d2465b" />
-
 
 ### step 2 : open the resources folder
 <img width="1739" height="720" alt="{81B818B3-BC9B-49EC-B8FB-5416BCDC211D}" src="https://github.com/user-attachments/assets/0c00c086-b6a0-4b7a-9484-2e95e94e166a" />
