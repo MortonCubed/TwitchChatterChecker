@@ -1,5 +1,5 @@
 # how to use:
-(long form youtube tutorial : https://www.youtube.com/watch?v=q0EFY09cVyg&lc=UgxVsthDCn9iKDXIYc54AaABAg)
+## For people who downloaded the package :
 ### step 1 : Extract the installed file
 <img width="1633" height="707" alt="{86BFC1BF-134D-455A-A7EA-19AA5E6C91E8}" src="https://github.com/user-attachments/assets/ee99f5bc-9145-42aa-a4bf-a0c2c7d2465b" />
 
@@ -27,4 +27,20 @@ https://www.youtube.com/watch?v=q0EFY09cVyg&lc=UgxVsthDCn9iKDXIYc54AaABAg
 
 ### step 9 : press it whenever you want to check for that person,although,that button won't be functional any other application while the exe is open!(e.g. typing k while having k set as hotkey and exe opened will cause you to be unable to type k in other application
 <img width="869" height="887" alt="{B614483E-3AE4-4222-ADB2-CB575F8BC9CE}" src="https://github.com/user-attachments/assets/6859e3fb-6ef6-4c00-b3d9-54c15c4478ae" />
+
+## For people who downloaded the zip file :
+### step 1 : extract the file  
+<img width="1873" height="767" alt="{50DD330A-0E81-4044-940B-C32CDA960992}" src="https://github.com/user-attachments/assets/f53efde8-453d-45ed-a888-62ad53ffaf00" />
+
+### step 2 : (Right click on blank space) and open the terminal in the folder 
+<img width="1885" height="768" alt="{A4786317-DD51-4B19-A4E0-3EF29ECC6CDF}" src="https://github.com/user-attachments/assets/a7bc085f-c631-4dfb-a889-ec30056c12cd" />
+
+### step 3 : do `npm install` in terminal 
+<img width="1100" height="597" alt="{CF375186-7B8D-46CB-BC46-3435259DAC33}" src="https://github.com/user-attachments/assets/8704ae43-f598-4f65-ae10-e4ea6b021a4d" />
+
+### step 4 : do `npm start` in terminal 
+<img width="1109" height="603" alt="{6DC7A932-9FB8-4954-A77D-C5C785FD54DB}" src="https://github.com/user-attachments/assets/060dd0af-00a3-4749-886a-771c285b6d7c" />
+
+### step 5 : Do Step 5 to 9 from the package installation(above)
+
 
