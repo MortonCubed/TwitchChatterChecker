@@ -76,7 +76,7 @@ async function getChattersAndDownload() {
         );
     
         if(foundUser){
-          resultDiv.innerHTML = `<strong>${foundUser.user_login}</strong> is in chat right now! 🎵`;
+          resultDiv.innerHTML = `<strong>${foundUser.user_login}</strong> is in chat right now!`;
             notificationSound.play().catch;
           break;
         }
@@ -93,7 +93,7 @@ async function getChattersAndDownload() {
       }
       } catch (error) {
         console.error(error);
-        resultDiv.textContent = `❌ Error: ${error.message}`;
+        resultDiv.textContent = ` Error: ${error.message}`;
       }
     }
         document.getElementById('InsertUser').addEventListener('click', () => {
