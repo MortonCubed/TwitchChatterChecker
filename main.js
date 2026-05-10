@@ -38,9 +38,9 @@ app.whenReady().then(() => {
         });
 
         if (isRegistered) {
-            console.log(`✅ Hotkey "${newHotkey}" registered successfully`);
+            console.log(`Hotkey "${newHotkey}" registered successfully`);
         } else {
-            console.log(`❌ Failed to register hotkey "${newHotkey}"`);
+            console.log(`Failed to register hotkey "${newHotkey}"`);
         }
     });
 });
